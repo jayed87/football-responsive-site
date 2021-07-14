@@ -247,3 +247,74 @@ footer{
 .result-score p{
     color: gray;
 }
+/* -------------------
+    media quaries 
+---------------------*/
+
+
+/* mobile devices */
+@media only screen and (max-width:688px) {
+    .banner-wrapper,.result-contents,.highlights{
+        flex-direction: column;
+        display: flex;
+        text-align: center;
+    }
+    .banner-content{
+        width: 100%;
+        text-align: center;
+    }
+    .banner-content h1{
+        font-size: 40px;
+    }
+    .banner-content img{
+        width: 100%;
+    }
+    .player-wrapper,.gallery{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .highlight-info{
+        width: 50%;
+        height: 50%;
+        margin-bottom: 20px;
+    }
+    .highlight-thumbnail{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .highlight-info h1{
+        font-size: 38px;
+    }
+    .footer-logo{
+        width: 80%;
+        height: 80%;
+    }
+
+}
+/* tablet devices */
+
+@media only screen and (min-width: 688px) and (max-width: 992px){
+    .banner-wrapper,.result-contents,.highlights{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+    .banner-content{
+        width: 100%;
+        text-align: center;
+    }
+    .banner-content h1{
+        font-size: 60px;
+    }
+    .banner-content img{
+        width: 50%;
+    }
+    .player-wrapper,.gallery{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .highlight-info{
+        margin-bottom: 30px;
+    }
+
+}
