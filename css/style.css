@@ -1,0 +1,139 @@
+/*------------------
+importing fonts
+-------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@font-face {
+    font-family: niconne;
+    src: url("fonts/Niconne-Regular.ttf");
+}
+
+/*-----------------
+utilities style
+-----------------*/
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*-----------------------
+Banner Container style
+--------------------------*/
+.banner-container{
+    background-color: #2D25A0;
+    
+}
+.banner-wrapper{
+    height: 677px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+}
+.banner-content{
+    width: 500px;
+    height: 438px;
+}
+.banner-container h1{
+    font-weight: bold;
+    font-size: 64px;
+    color: #FFFFFF;
+}
+.banner-content img{
+    width: 100%;
+}
+.banner-content:hover img{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
+.live-button{
+    text-decoration: none;
+    background-color: #E02C6D;
+    color: white;
+    padding: 10px 24px;
+}
+.live-button i{
+    margin-left: 5px;
+}
+.live-button:hover{
+    color: blue;
+}
+/*--------------------
+player details style
+---------------------*/
+.player-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.player-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 27px;
+    grid-row-gap: 30px;
+    margin-top: 70px;
+}
+.player{
+    width: 330px;
+    height: 474px;
+    padding: 10px;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player-thumbnail img{
+    width: 100%;
+}
+.player-details .player-name{
+    color: #18191F;
+    font-size: 28px;
+    margin: 16px 0px;
+}
+.player-details p{
+    color: #6C6C6C;
+    font-size: 16px;
+}
+
+/*------------------------------
+highlishts sytle
+--------------------------*/
+.highlight-container{
+    margin: 100px 0px;
+}
+.highlights{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.highlight-info{
+    width: 469px;
+    height: 309px;
+}
+.highlight-info h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    color: #0A0826;
+    margin: 0;
+}
+.highlight-info p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6C6C6C;
+    margin-bottom: 41px;
+}
+.highlight-thumbnail{
+    width: 567px;
+    height: 427px;
+}
+.highlight-thumbnail img{
+    width: 100%;
+}
+.highlight-thumbnail:hover img{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
