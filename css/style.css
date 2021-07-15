@@ -19,6 +19,23 @@ body{
     padding: 0;
 }
 
+
+/*--------------------------- 
+        navbar sytle 
+-----------------------------*/
+.header{
+    position: absolute;
+    color: white;
+}
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.navbar li{
+    list-style: none;
+    margin-right: 40px;
+}
 /*-----------------------
 Banner Container style
 --------------------------*/
